@@ -12,7 +12,7 @@ namespace ZTYS.Backend.Mobile.BFF.Models
         public string Id { get; set; }
         public string Title { get; set; }
         public string Url { get; set; }
-        public string TitleImageUrl { get; set; }
+        public string TitleImageUrl { get; set; } 
 
         public DateTime DatePublished { get; set; }
 
