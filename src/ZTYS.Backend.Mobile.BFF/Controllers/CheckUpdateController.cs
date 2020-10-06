@@ -34,7 +34,7 @@ namespace ZTYS.Backend.Mobile.BFF.Controllers
                 VersionCode = 130,
                 VersionName = "1.6.1",
                 UpdateDigest = "测试",
-                ForcedUpdate = true,
+                ForcedUpdate = false,
                 PackageDownloadUrl = "http://www.zhangtongyishui.com"
             };
 
