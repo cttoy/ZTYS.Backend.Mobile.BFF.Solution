@@ -28,17 +28,22 @@ namespace ZTYS.Backend.Mobile.BFF.Controllers
         [HttpGet]
         public AppVersion Get(int versionCode, string versionName, string platformType)
         {
-            var newAppVersion = new AppVersion
+            if (versionCode < 100)
             {
-                Id = "1",
-                VersionCode = 100,
-                VersionName = "1.0.0",
-                UpdateDigest = "正式发布",
-                ForcedUpdate = false,
-                PackageDownloadUrl = "http://www.zhangtongyishui.com"
-            };
+                var newAppVersion = new AppVersion
+                {
+                    Id = "1",
+                    VersionCode = 100,
+                    VersionName = "1.0.0",
+                    UpdateDigest = "正式发布",
+                    ForcedUpdate = false,
+                    PackageDownloadUrl = "https://ysxjtysj.oss-cn-beijing.aliyuncs.com/ztys/ztys-1.0.0.apk"
+                };
 
-            return newAppVersion;
+                return newAppVersion;
+            }
+
+            return null;
         }
     }
 }
