@@ -31,9 +31,9 @@ namespace ZTYS.Backend.Mobile.BFF.Controllers
             var newAppVersion = new AppVersion
             {
                 Id = "1",
-                VersionCode = 130,
-                VersionName = "1.6.1",
-                UpdateDigest = "测试",
+                VersionCode = 100,
+                VersionName = "1.0.0",
+                UpdateDigest = "正式发布",
                 ForcedUpdate = false,
                 PackageDownloadUrl = "http://www.zhangtongyishui.com"
             };
