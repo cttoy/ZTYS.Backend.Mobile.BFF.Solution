@@ -29,6 +29,7 @@ namespace ZTYS.Backend.Mobile.BFF.Controllers
         public AppVersion Get(int versionCode, string versionName, string platformType)
         {
             //JSON中的换行符 \n 需要转义为 \\n
+            //换行符后面要紧接内容
             var newVersionCode = 104;
 
             if (versionCode < newVersionCode)
@@ -38,7 +39,7 @@ namespace ZTYS.Backend.Mobile.BFF.Controllers
                     Id = "1",
                     VersionCode = newVersionCode,
                     VersionName = "1.0.4",
-                    UpdateDigest = "1.修改启动图片 \\n 2.修改首页脚注",
+                    UpdateDigest = "1.修改启动图片\\n2.修改首页脚注",
                     ForcedUpdate = false,
                     PackageDownloadUrl = "https://ysxjtysj.oss-cn-beijing.aliyuncs.com/ztys/ztys-1.0.4.apk"
                 };
