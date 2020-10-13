@@ -33,11 +33,11 @@ namespace ZTYS.Backend.Mobile.BFF.Controllers
                 var newAppVersion = new AppVersion
                 {
                     Id = "1",
-                    VersionCode = 103,
-                    VersionName = "1.0.3",
-                    UpdateDigest = "测试检查更新功能",
+                    VersionCode = 104,
+                    VersionName = "1.0.4",
+                    UpdateDigest = "1.修改启动图片 \n 2.修改首页脚注",
                     ForcedUpdate = false,
-                    PackageDownloadUrl = "https://ysxjtysj.oss-cn-beijing.aliyuncs.com/ztys/ztys-1.0.3.apk"
+                    PackageDownloadUrl = "https://ysxjtysj.oss-cn-beijing.aliyuncs.com/ztys/ztys-1.0.4.apk"
                 };
 
                 return newAppVersion;
