@@ -29,12 +29,14 @@ namespace ZTYS.Backend.Mobile.BFF.Controllers
         public AppVersion Get(int versionCode, string versionName, string platformType)
         {
             //JSON中的换行符 \n 需要转义为 \\n
-            if (versionCode < 103)
+            var newVersionCode = 104;
+
+            if (versionCode < newVersionCode)
             {
                 var newAppVersion = new AppVersion
                 {
                     Id = "1",
-                    VersionCode = 104,
+                    VersionCode = newVersionCode,
                     VersionName = "1.0.4",
                     UpdateDigest = "1.修改启动图片 \\n 2.修改首页脚注",
                     ForcedUpdate = false,
