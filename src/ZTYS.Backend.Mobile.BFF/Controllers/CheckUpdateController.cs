@@ -39,7 +39,7 @@ namespace ZTYS.Backend.Mobile.BFF.Controllers
                     Id = "1",
                     VersionCode = newVersionCode,
                     VersionName = "1.0.10",
-                    UpdateDigest = "修改脚注图片滚动的Bug",
+                    UpdateDigest = "1.增加出租叫车过渡窗口\\n2.安卓下立即叫车可直接拨号",
                     ForcedUpdate = false,
                     PackageDownloadUrl = "https://ysxjtysj.oss-cn-beijing.aliyuncs.com/ztys/ztys-1.0.10.apk"
                 };
