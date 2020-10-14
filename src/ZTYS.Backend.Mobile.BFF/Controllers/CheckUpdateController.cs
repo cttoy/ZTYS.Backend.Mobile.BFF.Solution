@@ -30,7 +30,7 @@ namespace ZTYS.Backend.Mobile.BFF.Controllers
         {
             //JSON中的换行符 \n 需要转义为 \\n
             //换行符后面要紧接内容
-            var newVersionCode = 107;
+            var newVersionCode = 108;
 
             if (versionCode < newVersionCode)
             {
@@ -38,10 +38,10 @@ namespace ZTYS.Backend.Mobile.BFF.Controllers
                 {
                     Id = "1",
                     VersionCode = newVersionCode,
-                    VersionName = "1.0.7",
-                    UpdateDigest = "增加出租叫车功能",
+                    VersionName = "1.0.8",
+                    UpdateDigest = "修改首页脚注图片",
                     ForcedUpdate = false,
-                    PackageDownloadUrl = "https://ysxjtysj.oss-cn-beijing.aliyuncs.com/ztys/ztys-1.0.7.apk"
+                    PackageDownloadUrl = "https://ysxjtysj.oss-cn-beijing.aliyuncs.com/ztys/ztys-1.0.8.apk"
                 };
 
                 return newAppVersion;
